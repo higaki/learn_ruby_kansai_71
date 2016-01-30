@@ -15,12 +15,12 @@ class TestStack < Test::Unit::TestCase
     assert_equal 3, @stack.pop
   end
 
-  def test_size_by_datum_stored_stack
+  def test_size_by_3_stacked
     @stack.push 3
     assert_equal 1, @stack.size
   end
 
-  def test_size_by_2_data_stored_stack
+  def test_size_by_3_5_stacked
     @stack.push 3
     @stack.push 5
     assert_equal 2, @stack.size
