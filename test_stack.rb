@@ -25,4 +25,9 @@ class TestStack < Test::Unit::TestCase
     @stack.push 5
     assert_equal 2, @stack.size
   end
+
+  def test_empty_by_3_stacked
+    @stack.push 3
+    assert !@stack.empty?
+  end
 end
