@@ -41,4 +41,10 @@ class TestStack < Test::Unit::TestCase
     @stack.pop
     assert_equal 1, @stack.size
   end
+
+  def test_pop_by_3_5_stacked
+    @stack.push 3
+    @stack.push 5
+    assert_equal 5, @stack.pop
+  end
 end
