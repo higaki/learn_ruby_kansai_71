@@ -14,4 +14,9 @@ class TestStack < Test::Unit::TestCase
     @stack.push 3
     assert_equal 3, @stack.pop
   end
+
+  def test_size_by_datum_stored_stack
+    @stack.push 3
+    assert_equal 1, @stack.size
+  end
 end
