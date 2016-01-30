@@ -8,6 +8,7 @@ class Stack
   end
 
   def push(val)
+    @stack.push val
   end
 
   def pop
@@ -15,6 +16,6 @@ class Stack
   end
 
   def size
-    1
+    @stack.size
   end
 end
