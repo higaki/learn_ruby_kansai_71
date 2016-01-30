@@ -34,4 +34,11 @@ class TestStack < Test::Unit::TestCase
   def test_pop_by_new_stack
     assert_raise(Stack::EmptyStackError){@stack.pop}
   end
+
+  def test_size_by_push_push_pop
+    @stack.push 3
+    @stack.push 5
+    @stack.pop
+    assert_equal 1, @stack.size
+  end
 end
