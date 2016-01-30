@@ -14,6 +14,7 @@ class Stack
   end
 
   def pop
+    raise EmptyStackError if empty?
     3
   end
 
