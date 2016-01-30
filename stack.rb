@@ -1,4 +1,6 @@
 class Stack
+  class EmptyStackError <RuntimeError; end
+  
   def initialize
     @stack = []
   end
