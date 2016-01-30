@@ -9,4 +9,9 @@ class TestStack < Test::Unit::TestCase
   def test_empty_by_new_stack
     assert @stack.empty?
   end
+
+  def test_push_3_and_pop
+    @stack.push 3
+    assert_equal 3, @stack.pop
+  end
 end
